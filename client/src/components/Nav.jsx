@@ -8,12 +8,13 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
   const [state, dispatch] = useStoreContext();
   return (
-    <section className="bg-[#011638] flex justify-between items-center text-white border-b-4">
-      <div className="logo">
-        <img className='max-h-[100px] max-w-[200px]' src={Logo} alt="Tech-E" />
-      </div>
+    <section className="bg-[#5B7C99] flex justify-between items-center text-white">
+        <h1 className="mx-24 my-5 text-5xl">Tech-E</h1>
+      {/* <div className="logo"> */}
+        {/* <img className='max-h-[100px] max-w-[200px]' src={Logo} alt="Tech-E" /> */}
+      {/* </div> */}
 
-      <ul className="flex items-center space-x-4 mr-5">
+      <ul className="flex items-center space-x-6 mr-24">
         <li className="nav-item">
           <Link
             to="/"
@@ -56,7 +57,7 @@ function NavTabs() {
             <FaShoppingCart  onClick={() => {
               console.log('you clicked me');
               dispatch({ type: TOGGLE_CART });
-            }} className="text-2xl" /> {/* Adjust the size with text-2xl or other utility classes */}
+            }} className="text-2xl cart-icon" /> {/* Adjust the size with text-2xl or other utility classes */}
 
           </Link>
         </li>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --Navy: #011638;
+    --Navy: #5B7C99;
     --Gold: #ecd398;
   }
 
@@ -100,4 +100,8 @@
   width: 250px;
   z-index: 1000;
   background-color: white;
+}
+
+.cart-icon {
+  color: #E86A22;
 }
