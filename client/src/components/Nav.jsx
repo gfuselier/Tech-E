@@ -8,8 +8,8 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
   const [state, dispatch] = useStoreContext();
   return (
-    <section className="bg-[#5B7C99] flex justify-between items-center text-white">
-        <h1 className="mx-24 my-5 text-5xl">Tech-E</h1>
+    <section className="bg-[#5B7C99] flex justify-between items-center text-white border-b-2 border-[#E86A22]">
+        <h1 className="mx-24 my-5 text-5xl font-bold">Tech-E</h1>
       {/* <div className="logo"> */}
         {/* <img className='max-h-[100px] max-w-[200px]' src={Logo} alt="Tech-E" /> */}
       {/* </div> */}
@@ -18,7 +18,7 @@ function NavTabs() {
         <li className="nav-item">
           <Link
             to="/"
-            className={`hover:text-gray-300 ${currentPage === '/' ? 'font-bold' : ''}`}
+            className={`hover:text-[#E86A22] ${currentPage === '/' ? 'font-bold' : ''}`}
           >
             Home
           </Link>
@@ -27,7 +27,7 @@ function NavTabs() {
         <li className="nav-item">
           <Link
             to="/ProductsPage"
-            className={`hover:text-gray-300 ${currentPage === '/ProductsPage' ? 'font-bold' : ''}`}
+            className={`hover:text-[#E86A22] ${currentPage === '/ProductsPage' ? 'font-bold' : ''}`}
           >
             Products
           </Link>
@@ -41,7 +41,7 @@ function NavTabs() {
           ) : ( */}
             <Link
               to="/Login"
-              className={`hover:text-gray-300 ${currentPage === '/Login' ? 'font-bold' : ''}`}
+              className={`hover:text-[#E86A22] ${currentPage === '/Login' ? 'font-bold' : ''}`}
             >
               Login/Sign Up
             </Link>
@@ -51,13 +51,13 @@ function NavTabs() {
         <li className="nav-item mt-1">
           <Link
            
-            className={`hover:text-gray-300 ${currentPage === '/Checkout' ? 'font-bold' : ''} flex items-center`}
+            className={`hover:text-[#E86A22] ${currentPage === '/Checkout' ? 'font-bold' : ''} flex items-center`}
           >
 
             <FaShoppingCart  onClick={() => {
               console.log('you clicked me');
               dispatch({ type: TOGGLE_CART });
-            }} className="text-2xl cart-icon" /> {/* Adjust the size with text-2xl or other utility classes */}
+            }} className="text-2xl" /> {/* Adjust the size with text-2xl or other utility classes */}
 
           </Link>
         </li>

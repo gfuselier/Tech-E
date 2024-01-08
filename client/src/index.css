@@ -4,7 +4,7 @@
 
 :root {
     --Navy: #5B7C99;
-    --Gold: #ecd398;
+    --Orange: #E86A22;
   }
 
   /* .cart {
@@ -102,6 +102,6 @@
   background-color: white;
 }
 
-.cart-icon {
+.icon {
   color: #E86A22;
 }

@@ -15,7 +15,7 @@ import ProductItem from '../components/ProductItem';
 
 const Main = () => {
 
-  const icons = [<AiFillClockCircle />, <AiFillDollarCircle />, <AiFillPhone />, <FaTruckFast />];
+  const icons = [<AiFillClockCircle className="icon"/>, <AiFillDollarCircle className="icon"/>, <AiFillPhone className="icon"/>, <FaTruckFast className="icon"/>];
 
   const descriptions = [
     "Around the clock updates on new tech",
@@ -39,7 +39,7 @@ const Main = () => {
 
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-white min-h-screen">
       <Cart />
       <section className="bg-black">
         <div className="container mx-auto flex items-center justify-center h-[320px] relative">
@@ -47,7 +47,7 @@ const Main = () => {
             {[Carousel1,Carousel2,Carousel3].map((carouselImg, index) => (
               <div key={index} className="relative">
                 <img className="max-h-[300px] w-full object-cover" src={carouselImg} alt={`Special Item ${index}`} />
-                {/* <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-black px-4 py-2 rounded-md hover:bg-[--Gold] hover:text-black   font-serif ">Buy Now</button> */}
+                {/* <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-black px-4 py-2 rounded-md hover:bg-[--Orange] hover:text-black   font-serif ">Buy Now</button> */}
               </div>
             ))}
           </Slider>
@@ -64,7 +64,7 @@ const Main = () => {
               <h2 className="text-3xl font-bold mb-4"> Experience Innovation at Its Best! </h2>
               <p className="text-gray-800 mb-4">Looking for cutting-edge technology that redefines the way you live, work, and play? Look no further! Introducing our top three tech products:</p>
 
-              <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-[--Gold] hover:text-black  ">
+              <button className="bg-[#E86A22] text-white px-4 py-2 rounded-md hover:bg-[--Orange] hover:text-black  ">
                 <a href='/ProductsPage'>Explore</a>
               </button>
 
@@ -130,16 +130,16 @@ const Main = () => {
       {/* Social Media Links */}
       <div className="bg-[--Navy] py-8">
         <div className="container mx-auto flex justify-center">
-          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Gold]">
+          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Orange]">
             <FaInstagram />
           </a>
-          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Gold]">
+          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Orange]">
             <FaFacebook />
           </a>
-          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Gold]">
+          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Orange]">
             <FaGithub />
           </a>
-          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Gold]">
+          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Orange]">
             <FaLinkedin />
           </a>
         </div>
