@@ -75,7 +75,7 @@ function ProductItem(item) {
         
        
   
-        <button onClick={addToCart} className="btn btn-block btn-squared bg-white text-[#E86A22] font-semibold rounded-2xl max-w-[150px] min-w-[130px] mx-auto mt-5 hover:min-w-[132px] hover:bg-[--Orange] hover:text-black hover:font-semibold">
+        <button onClick={addToCart} className="btn btn-block btn-squared bg-white text-[#E86A22] font-semibold rounded-2xl max-w-[150px] min-w-[130px] mx-auto mt-5 hover:min-w-[132px] hover:bg-[--Orange] hover:text-white hover:font-semibold">
           Add to cart
         </button>
       </div>

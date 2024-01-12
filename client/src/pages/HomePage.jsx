@@ -64,7 +64,7 @@ const Main = () => {
               <h2 className="text-3xl font-mono font-bold mb-4"> Experience Innovation at Its Best! </h2>
               <p className="text-gray-800 mb-4">Looking for cutting-edge technology that redefines the way you live, work, and play? Look no further! Introducing our top three tech products:</p>
 
-              <button className="bg-[#E86A22] text-white px-4 py-2 rounded-md hover:bg-[--Orange] hover:text-black  ">
+              <button className="bg-[#E86A22] text-white px-4 py-2 rounded-md hover:bg-[--Orange] hover:font-semibold">
                 <a href='/ProductsPage'>Explore</a>
               </button>
 
