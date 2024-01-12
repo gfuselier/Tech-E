@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-    --Navy: #5B7C99;
+    --Navy: #058ED9; 
     --Orange: #E86A22;
   }
+  /* #5B7C99 */
 
   /* .cart {
     position: fixed;

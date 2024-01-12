@@ -8,7 +8,7 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
   const [state, dispatch] = useStoreContext();
   return (
-    <section className="bg-[#5B7C99] flex justify-between items-center text-white border-b-2 border-[#E86A22]">
+    <section className="bg-[#058ED9] flex justify-between items-center text-white border-b-2 border-[#E86A22]">
         <h1 className="mx-24 my-5 text-5xl font-bold">Tech-E</h1>
       {/* <div className="logo"> */}
         {/* <img className='max-h-[100px] max-w-[200px]' src={Logo} alt="Tech-E" /> */}
