@@ -87,6 +87,7 @@ export default function Contact() {
             <p className="text-gray-800 font-mono font-bold">Welcome back! Please log in.</p>
           ) : (
             <>
+            <p className="text-gray-800 font-mono font-bold">Welcome! Sign-up here.</p>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
                   Name
