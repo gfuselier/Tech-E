@@ -1,5 +1,5 @@
 
-import { FaInstagram, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+
 import { FaTruckFast } from 'react-icons/fa6';
 import { AiFillClockCircle, AiFillDollarCircle, AiFillPhone } from "react-icons/ai";
 import Slider from 'react-slick';
@@ -125,25 +125,6 @@ const Main = () => {
           </div>
         </div>
       </section>
-
-
-      {/* Social Media Links */}
-      <div className="bg-[--Navy] py-8">
-        <div className="container mx-auto flex justify-center">
-          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Orange]">
-            <FaInstagram />
-          </a>
-          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Orange]">
-            <FaFacebook />
-          </a>
-          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Orange]">
-            <FaGithub />
-          </a>
-          <a href="#" className="text-2xl mx-4 text-white hover:text-[--Orange]">
-            <FaLinkedin />
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
