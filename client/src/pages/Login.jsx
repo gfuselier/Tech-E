@@ -84,7 +84,7 @@ export default function Contact() {
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form className="space-y-6" onSubmit={handleSubmit}>
           {isExistingUser ? (
-            <p className="text-gray-800">Welcome back! Please log in.</p>
+            <p className="text-gray-800 font-mono font-bold">Welcome back! Please log in.</p>
           ) : (
             <>
               <div>
@@ -196,7 +196,7 @@ export default function Contact() {
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-[--Navy] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[--Gold] hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="flex w-full justify-center rounded-md bg-[--Navy] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[--Orange] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               {isExistingUser ? 'Log In' : 'Sign Up'}
             </button>
@@ -206,7 +206,7 @@ export default function Contact() {
             <button
               type="button"
               onClick={() => setIsExistingUser(!isExistingUser)}
-              className="flex w-full justify-center rounded-md bg-gray-400 px-3 py-1.5 text-sm font-semibold leading-6 text-gray-800 shadow-sm hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+              className="flex w-full justify-center rounded-md bg-[--Orange] px-3 py-1.5 text-sm font-semibold leading-6 text-gray-800 shadow-sm hover:bg-[--Navy] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
             >
               {isExistingUser ? 'New User? Sign Up' : 'Existing User? Log In'}
             </button>
