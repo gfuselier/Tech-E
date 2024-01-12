@@ -40,14 +40,14 @@ function CategoryMenu() {
       currentCategory: id,
     });
   };
-
+  // items-center
 return (
-  <div className='flex flex-col items-center justify-center'>
-    <h2 className='my-6 text-center text-4xl font-serif'>Choose a Category:</h2>
-    <div className="flex flex-wrap justify-center">
+  <div className='flex mx-24 my-6 justify-start'>
+    <h2 className='flex text-2xl font-mono font-semibold'>Shop by Category:</h2>
+    <div className="flex flex-wrap content-center">
       {categories.map((item) => (
         <button
-          className='px-4 font-serif mb-2 mx-2 bg-[--Navy] text-white rounded-md'
+          className='px-4 font-mono mx-2 bg-[--Orange] text-white rounded-md hover:bg-[--Navy] hover:font-semibold'
           key={item._id}
           onClick={() => {
             handleClick(item._id);
@@ -58,7 +58,7 @@ return (
       ))}
     </div>
     <button
-      className=' font-serif mt-2 text-xl font-semibold px-4 bg-[--Navy] text-white  rounded-md'
+      className=' font-mono font-semibold px-4 m-2 bg-[--Orange] text-white rounded-md hover:bg-[--Navy]'
       onClick={() => { handleClick('') }}
     >
       All
