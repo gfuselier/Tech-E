@@ -14,7 +14,7 @@ function NavTabs() {
         {/* <img className='max-h-[100px] max-w-[200px]' src={Logo} alt="Tech-E" /> */}
       {/* </div> */}
 
-      <ul className="flex items-center space-x-6 mr-24">
+      <ul className="flex items-center space-x-6 mr-24 font-mono">
         <li className="nav-item">
           <Link
             to="/"
