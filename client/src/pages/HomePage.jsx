@@ -61,7 +61,7 @@ const Main = () => {
           {/* Left section for text description and explore button */}
           <div className="lg:col-span-1">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold mb-4"> Experience Innovation at Its Best! </h2>
+              <h2 className="text-3xl font-mono font-bold mb-4"> Experience Innovation at Its Best! </h2>
               <p className="text-gray-800 mb-4">Looking for cutting-edge technology that redefines the way you live, work, and play? Look no further! Introducing our top three tech products:</p>
 
               <button className="bg-[#E86A22] text-white px-4 py-2 rounded-md hover:bg-[--Orange] hover:text-black  ">
@@ -92,7 +92,7 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-200">
+      <section className="py-16 bg-white">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
           {/* Left section with image */}
           <div className="lg:w-1/2 lg:pr-8 mb-8">
@@ -105,7 +105,7 @@ const Main = () => {
 
 
           <div className="lg:w-1/2 lg:pl-8">
-            <h2 className="text-3xl font-bold mb-4">Why Choose Us</h2>
+            <h2 className="text-3xl font-bold font-mono mb-4">Why Choose Us</h2>
             <p className="text-gray-800 mb-4 font-semibold">
               Choose us for unmatched quality, reliability, and a seamless experience.
             </p>
