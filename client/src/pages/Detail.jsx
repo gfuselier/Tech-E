@@ -74,7 +74,7 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container mx-auto mt-10">
+        <div className="container mx-auto mt-10 h-screen">
           <Link to="/" className="hover:text-[--Orange]">
             Go Back
           </Link>

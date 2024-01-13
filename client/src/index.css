@@ -6,6 +6,25 @@
     --Navy: #058ED9; 
     --Orange: #E86A22;
   }
+
+  .cart {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    z-index: 1000;
+    background-color: white;
+  }
+  .cart img {
+    width: 70px;
+    margin-right: 1rem;
+    
+  }
+  
+  .icon {
+    color: #E86A22;
+  }
+
+ 
   /* #5B7C99 */
 
   /* .cart {
@@ -58,11 +77,7 @@
     transform: rotate(8deg);
   } */
   
-  .cart img {
-    width: 70px;
-    margin-right: 1rem;
-    
-  }
+ 
   
   /* .cart input {
     width: 50px;
@@ -94,15 +109,3 @@
   color: red !important;
   opacity: 30% !important;
 } */
-
-.cart {
-  position: absolute;
-  right: 0;
-  width: 250px;
-  z-index: 1000;
-  background-color: white;
-}
-
-.icon {
-  color: #E86A22;
-}
