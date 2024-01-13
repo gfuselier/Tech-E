@@ -87,7 +87,7 @@ if (error) { console.log(error);}
           <div className="flex-row text-center">
             {/* Check to see if the user is logged in. If so render a button to check out */}
             {Auth.loggedIn() ? (
-              <button className='text-lg font-serif bg-[--Navy] text-white p-1 rounded-2xl mt-3' onClick={submitCheckout}>Checkout</button>
+              <button className='text-lg  bg-[--Orange] text-white px-4 rounded-xl mt-3' onClick={submitCheckout}>Checkout</button>
             ) : (
               <span>(log in to check out)</span>
             )}
