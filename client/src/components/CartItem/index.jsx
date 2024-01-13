@@ -37,7 +37,7 @@ const CartItem = ({ item }) => {
   }
 
   return (
-    <div className="flex-row ml-4">
+    <div className="flex-row m-4 border-b-2">
       <div>
         <img
           src={`${item.image}`}
@@ -45,15 +45,15 @@ const CartItem = ({ item }) => {
         />
       </div>
       <div>
-        <div className="font-serif">{item.name}, ${item.price}</div>
+        <div className="font-semibold">{item.name}, ${item.price}</div>
         <div className="flex">
-          <span className="font-serif">Qty:</span>
+          <span className="">Quanity: </span>
           <input
             type="number"
             placeholder="1"
             value={item.purchaseQuantity}
             onChange={onChange}
-            className="max-w-[60px] font-semibold font-sans"
+            className="max-w-[60px] font-sans ml-2"
           />
           <span
             className="text-lg cursor-pointer"

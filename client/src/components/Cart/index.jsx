@@ -77,16 +77,13 @@ if (error) { console.log(error);}
 
   return (
     <div className="cart">
-      <div className="close bg-[--Navy] text-center text-white m-2 cursor-pointer rounded-lg shadow-md shadow-gray-600" onClick={toggleCart}>
-        Close
-      </div>
-      <h2 className='text-center font-serif'>Shopping Cart</h2>
+      <h2 className='text-center font-mono font-bold'>Shopping Cart</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
-            <CartItem key={item._id} item={item} />
+            <CartItem key={item._id} item={item}/>
           ))}
-
+            <strong className="my-2">Total: ${calculateTotal()}</strong>
           <div className="flex-row text-center">
             {/* Check to see if the user is logged in. If so render a button to check out */}
             {Auth.loggedIn() ? (
@@ -96,16 +93,19 @@ if (error) { console.log(error);}
             )}
             
           </div>
-          <strong>Total: ${calculateTotal()}</strong>
+          
         </div>
       ) : (
         <h3>
           <span role="img" aria-label="shocked">
-            😱
+          😢
           </span>
           You haven't added anything to your cart yet!
         </h3>
       )}
+      <div className="close bg-[--Navy] text-center text-white m-2 cursor-pointer rounded-lg shadow-md shadow-gray-600" onClick={toggleCart}>
+        Close
+      </div>
     </div>
   );
 };
