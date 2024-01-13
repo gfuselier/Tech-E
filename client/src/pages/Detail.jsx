@@ -75,7 +75,7 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="container mx-auto mt-10">
-          <Link to="/" className="text-indigo-600 hover:text-indigo-500">
+          <Link to="/" className="hover:text-[--Orange]">
             Go Back
           </Link>
 
@@ -84,7 +84,7 @@ function Detail() {
               <img
                 src={`${currentProduct.image}`}
                 alt={currentProduct.name}
-                className="max-w-full"
+                className="max-w-full rounded-lg mb-6 shadow-2xl"
               />
             </div>
 
@@ -98,13 +98,13 @@ function Detail() {
 
               <div className="mt-4 flex">
                 <button
-                  className="bg-indigo-500 text-white px-4 py-2 rounded-md mr-4"
+                  className="bg-[--Orange] text-white px-4 py-2 rounded-md mr-4 hover:bg-[--Navy]"
                   onClick={addToCart}
                 >
                   Add to Cart
                 </button>
                 <button
-                  className="text-indigo-500 hover:text-indigo-400"
+                  className="text-[--Navy] hover:font-semibold"
                   disabled={!cart.find((p) => p._id === currentProduct._id)}
                   onClick={removeFromCart}
                 >
