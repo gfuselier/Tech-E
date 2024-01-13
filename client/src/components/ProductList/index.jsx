@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import ProductItem from '../ProductItem';
+import ProductItem from '../ProductItemProdPage';
 import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useQuery } from '@apollo/client';
@@ -44,24 +44,24 @@ function ProductList() {
   }
 
   return (
-    <div className="my-2">
-      <h2>Our Products:</h2>
-      {state.products.length ? (
-        <div className="flex-row">
-          {filterProducts().map((product) => (
-            <ProductItem
-              key={product._id}
-              _id={product._id}
-              image={product.image}
-              name={product.name}
-              price={product.price}
-              quantity={product.quantity}
-              details={product.details}
-              description={product.description}
-              color={product.color}
-            />
-          ))}
-        </div>
+    <div className="my-4">
+    
+    {state.products.length ? (
+      <div className="flex flex-wrap justify-center ">
+        {filterProducts().map((product) => (
+          <ProductItem
+            key={product._id}
+            _id={product._id}
+            image={product.image}
+            name={product.name}
+            price={product.price}
+            quantity={product.quantity}
+            details={product.details}
+            description={product.description}
+            color={product.color}
+          />
+        ))}
+      </div>
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}

@@ -1,5 +1,5 @@
 
-import ProductList from "../components/ProductListProdPage";
+import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 

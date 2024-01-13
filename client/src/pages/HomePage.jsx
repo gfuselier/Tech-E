@@ -11,7 +11,7 @@ import Carousel1 from "../assets/images/carousel-img1.webp"
 import Carousel2 from "../assets/images/carousel-img2.webp"
 import Carousel3 from "../assets/images/carousel-img3.webp"
 import Cart from "../components/Cart";
-import ProductItem from '../components/ProductItem';
+import ProductItem from '../components/ProductItemHomePage';
 
 const Main = () => {
 
